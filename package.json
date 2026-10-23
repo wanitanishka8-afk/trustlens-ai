@@ -1,0 +1,29 @@
+{
+  "name": "trustlens-ai",
+  "version": "1.0.0",
+  "description": "TrustLens AI — A Functional AI-Powered Scam Detection Web Application",
+  "scripts": {
+    "dev": "concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix server run build && npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "test": "npm --prefix server run test",
+    "start": "npm --prefix server run start",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": [
+    "scam-detection",
+    "cybersecurity",
+    "ai",
+    "gemini",
+    "trustlens",
+    "phishing"
+  ],
+  "author": "TrustLens AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
